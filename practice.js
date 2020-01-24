@@ -14,11 +14,12 @@
   Then alert your name using dot notation.
 */
 
-var me = {
-  name: 'Janaya',
+let me = {
+  name: "Janaya",
   age: 33
 }
-me.name
+
+me.me;
 
 ////////// PROBLEM 2 //////////
 
@@ -27,13 +28,13 @@ me.name
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-var myFavoritThings = {
-  band:'ACDC',
-  food:'rice',
-  person:'Karena',
-  book:'Game of Thrones',
-  movie:'IDK',
-  holiday:'my birthday. it is a holiday we should all have it off'
+let favoriteThings = {
+  band: 'ACDC',
+  food: 'rice',
+  person: 'Karena',
+  book: 'Game of Thrones',
+  movie: 'IDK',
+  holiday: 'my birthday. it is a holiday we should all have it off'
 }
 
 
@@ -42,58 +43,44 @@ var myFavoritThings = {
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-var myFavoritThings = {
-  band:'ACDC',
-  food:'rice',
-  person:'Karena',
-  book:'Game of Thrones',
-  movie:'IDK',
-  holiday:'my birthday. it is a holiday we should all have it off'
-}
-myFavoriteThings.car = 'audi';
-myFavoritThings.brand = 'H&M'
+favoriteThings['car'] = 'Scion'; 
+favoriteThings['brand'] = 'H&M';
+console.log(favoriteThings);
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-var myFavoritThings = {
-  band:'ACDC',
-  food:'rice',
-  person:'Karena',
-  book:'Game of Thrones',
-  movie:'IDK',
-  holiday:'my birthday. it is a holiday we should all have it off'
-}
-myFavoritThings.food = 'Chicken Nuggets';
-myFavoritThings.book = 'Harry Potter'
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
+
 
 ////////// PROBLEM 3 //////////
 
 /*
   Create an empty Object called backPack.
+
   Now, create a variable called item and set it equal to the string 'firstPocket'.
+
   Using bracket notation and the item variable, add a 'firstPocket' key (or property) to backPack.
+
   Set the value of that key to 'chapstick'.
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
 
-var backPack = {
-  items: 'fistPocket'[chapstick],
-  color:'black'
+let backPack = {
+
 }
 
-
+let item = 'firstPocket';
+backPack['firstPocket'] = 'chapstick';
+console.log(backPack);
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-var backPack = {
-  items:'fistPocket' [chapstick],
-  color:'black'
-}
- console.log(backPack) 
+console.log(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -101,11 +88,11 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
 
-var backPack = {
-  items:'fistPocket' [chapstick],
-  color:'black'
-}
- console.log(backPack.length) 
+// var backPack = {
+//   items:'fistPocket' [chapstick],
+//   color:'black'
+// }
+//  console.log(backPack.length) 
 
 ////////// PROBLEM 4 //////////
 
@@ -126,7 +113,7 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-user2.name = 'Bryan G. Smith';
+user2['name'] = 'Bryan G. Smith';
 user2.email = 'bryan.smith@devmounta.in'
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
